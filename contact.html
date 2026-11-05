@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUSSY - 聯絡我們</title>
+    <style>
+        body { font-family: sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #111; }
+        header { background: #000; color: #fff; padding: 20px; text-align: center; }
+        nav { background: #222; padding: 10px; text-align: center; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .container { max-width: 800px; margin: 40px auto; background: #fff; padding: 30px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; box-sizing: border-box; }
+        button { background: #000; color: #fff; border: none; padding: 12px 20px; margin-top: 20px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <header><h2>STUSSY STYLE</h2></header>
+    <nav>
+        <a href="index.html">首頁</a>
+        <a href="about.html">公司介紹</a>
+        <a href="contact.html">聯絡我們</a>
+    </nav>
+    <div class="container">
+        <h1>聯絡我們</h1>
+        <form action="https://formspree.io/f/你的表單代碼" method="POST">
+            <label>姓名：</label><input type="text" name="name" required>
+            <label>電話：</label><input type="tel" name="phone" required>
+            <label>EMAIL：</label><input type="email" name="email" required>
+            <label>聯絡內容：</label><textarea name="message" rows="5" required></textarea>
+            <button type="submit">送出表單</button>
+        </form>
+    </div>
+</body>
+</html>
